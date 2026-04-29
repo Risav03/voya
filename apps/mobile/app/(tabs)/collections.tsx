@@ -38,7 +38,7 @@ export default function CollectionsScreen() {
 
   return (
     <View className="flex-1 bg-bg">
-      <ScrollView showsVerticalScrollIndicator={false} contentContainerClassName="pb-[100px]">
+      <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 100 }}>
         <LinearGradient colors={['#F0FFF4', Colors.bg]} className="px-[22px] pb-5 pt-[52px]" start={{ x: 0.5, y: 0 }} end={{ x: 0.5, y: 1 }}>
           <View className="mb-1.5 flex-row items-center gap-2.5">
             <Landmark size={34} color={Colors.text} strokeWidth={2} />
