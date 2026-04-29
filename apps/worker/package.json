@@ -1,0 +1,28 @@
+{
+  "name": "@voya/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint . --config ../../packages/config/eslint.config.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@voya/ai": "workspace:*",
+    "@voya/analytics": "workspace:*",
+    "@voya/db": "workspace:*",
+    "@voya/geo": "workspace:*",
+    "@voya/types": "workspace:*",
+    "bullmq": "latest",
+    "ioredis": "latest",
+    "pino": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@voya/config": "workspace:*",
+    "typescript": "~5.9.2"
+  }
+}

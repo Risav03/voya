@@ -1,0 +1,32 @@
+{
+  "name": "reels-to-real-travel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.2.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "db:generate": "turbo run db:generate --filter=@voya/db",
+    "db:migrate": "turbo run db:migrate --filter=@voya/db",
+    "format": "prettier --write .",
+    "api:start": "bun --cwd apps/api src/index.ts",
+    "worker:start": "bun --cwd apps/worker src/index.ts",
+    "verify": "bun run typecheck && bun run lint && bun run test && bun run db:generate"
+  },
+  "devDependencies": {
+    "@voya/config": "workspace:*",
+    "@types/bun": "latest",
+    "eslint": "latest",
+    "prettier": "latest",
+    "turbo": "latest",
+    "typescript": "~5.9.2"
+  }
+}

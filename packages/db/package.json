@@ -1,0 +1,31 @@
+{
+  "name": "@voya/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema.ts",
+    "./repositories": "./src/repositories/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint . --config ../config/eslint.config.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "bun test",
+    "db:generate": "drizzle-kit generate --config drizzle.config.ts",
+    "db:migrate": "bun src/migrate-postgis.ts pre && drizzle-kit migrate --config drizzle.config.ts && bun src/migrate-postgis.ts post"
+  },
+  "dependencies": {
+    "drizzle-orm": "latest",
+    "pg": "latest"
+  },
+  "devDependencies": {
+    "@voya/config": "workspace:*",
+    "@types/pg": "latest",
+    "drizzle-kit": "latest",
+    "typescript": "~5.9.2"
+  }
+}

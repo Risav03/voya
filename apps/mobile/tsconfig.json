@@ -1,0 +1,23 @@
+{
+  "extends": "../../packages/config/tsconfig/react-native.json",
+  "compilerOptions": {
+    "types": [
+      "bun",
+      "react"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "app/**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "app.config.ts",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
+}

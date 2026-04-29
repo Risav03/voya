@@ -1,0 +1,14 @@
+export { adminRoutes } from './admin/routes';
+export { analyticsRoutes } from './analytics/routes';
+export { checkinsRoutes } from './checkins/routes';
+export { collectionsRoutes } from './collections/routes';
+export { graphRoutes } from './graph/routes';
+export { ingestionRoutes } from './ingestion/routes';
+export { itineraryRoutes } from './itinerary/routes';
+export { liveTravelRoutes } from './live-travel/routes';
+export { notificationsRoutes } from './notifications/routes';
+export { paymentsRoutes } from './payments/routes';
+export { placesRoutes } from './places/routes';
+export { rewardsRoutes } from './rewards/routes';
+export { tripsRoutes } from './trips/routes';
+export { usersRoutes } from './users/routes';

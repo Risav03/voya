@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules
+.bun
+.turbo
+.expo
+dist
+build
+coverage
+*.log
+apps/mobile/.expo
+apps/mobile/ios
+apps/mobile/android
+packages/db/migrations/meta/_journal.json

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@voya/types": ["packages/types/src/index.ts"],
+      "@voya/types/*": ["packages/types/src/*"],
+      "@voya/db": ["packages/db/src/index.ts"],
+      "@voya/db/*": ["packages/db/src/*"],
+      "@voya/ai": ["packages/ai/src/index.ts"],
+      "@voya/ai/*": ["packages/ai/src/*"],
+      "@voya/geo": ["packages/geo/src/index.ts"],
+      "@voya/geo/*": ["packages/geo/src/*"],
+      "@voya/analytics": ["packages/analytics/src/index.ts"],
+      "@voya/analytics/*": ["packages/analytics/src/*"],
+      "@voya/ui": ["packages/ui/src/index.ts"],
+      "@voya/ui/*": ["packages/ui/src/*"]
+    }
+  }
+}
