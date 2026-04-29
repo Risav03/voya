@@ -22,9 +22,9 @@ export function TravelMap({ pins }: TravelMapProps) {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: { minHeight: 240, borderRadius: 28, padding: 20, backgroundColor: '#eaf3ff' },
   title: { fontSize: 18, fontWeight: '700', color: '#10233f' },
   copy: { marginTop: 8, color: '#516070' },
 });
+

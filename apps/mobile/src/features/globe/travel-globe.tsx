@@ -9,9 +9,9 @@ export function TravelGlobe({ nodes, edges }: { nodes: TravelGraphNode[]; edges:
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: { minHeight: 260, borderRadius: 32, padding: 24, backgroundColor: '#111827' },
   title: { fontSize: 22, fontWeight: '800', color: 'white' },
   copy: { marginTop: 8, color: '#c7d2fe' },
 });
+

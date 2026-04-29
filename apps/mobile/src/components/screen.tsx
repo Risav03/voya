@@ -8,8 +8,8 @@ export function Screen({ children }: PropsWithChildren) {
     </SafeAreaView>
   );
 }
-
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: '#f8fafc' },
   content: { padding: 20, gap: 16 },
 });
+

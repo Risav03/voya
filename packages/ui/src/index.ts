@@ -1,4 +1,16 @@
+export * from './colors';
+export * from './spacing';
+export * from './fonts';
+export type { IconComponent, IconProps } from './icon-types';
 export * from './button';
 export * from './card';
 export * from './chip';
 export * from './theme';
+export * from './illustrations';
+export * from './PlaceCard';
+export * from './StatCard';
+export * from './TrophyCard';
+export * from './AIPickCard';
+export * from './CollectionCard';
+export * from './ActiveTripCard';
+export * from './CustomTabBar';

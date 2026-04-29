@@ -8,8 +8,8 @@ export function Button({ label, onPress }: { label: string; onPress: () => void 
     </Pressable>
   );
 }
-
 const styles = StyleSheet.create({
   button: { alignSelf: 'flex-start', borderRadius: theme.radius.pill, backgroundColor: theme.colors.ink, paddingHorizontal: 18, paddingVertical: 12 },
   label: { color: 'white', fontWeight: '700' },
 });
+
