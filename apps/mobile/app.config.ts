@@ -10,7 +10,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   userInterfaceStyle: 'automatic',
   ios: { supportsTablet: true, bundleIdentifier: 'app.reelstravel.mobile' },
   android: { package: 'app.reelstravel.mobile' },
-  plugins: ['expo-router', 'expo-secure-store', 'expo-location', 'expo-font'],
+  plugins: ['expo-router', 'expo-secure-store', 'expo-location'],
   experiments: { typedRoutes: true },
   extra: {
     apiUrl: process.env.MOBILE_PUBLIC_API_URL ?? 'http://localhost:4000',

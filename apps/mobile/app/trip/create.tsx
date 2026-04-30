@@ -12,7 +12,7 @@ export default function CreateTripScreen() {
   return (
     <Screen>
       <PremiumCard title="Create trip" subtitle="Start with destination intent; itinerary intelligence is queued after creation.">
-        <FormField label="Trip title" value={title} onChangeText={setTitle} placeholder="Weekend in the city" />
+        <FormField label="Trip title" value={title} onChangeText={setTitle} placeholder="Spring in Kyoto" />
         <Button label={create.isPending ? 'Creating...' : 'Create trip'} onPress={() => create.mutate({ title }, { onSuccess: (trip) => router.push(`/trip/${trip.id}/itinerary`) })} />
         {create.error ? <Text>{create.error.message}</Text> : null}
       </PremiumCard>
